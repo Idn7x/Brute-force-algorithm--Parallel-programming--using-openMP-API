@@ -1,0 +1,1 @@
+# Brute-force-algorithm--Parallel-programming--using-openMP-API
