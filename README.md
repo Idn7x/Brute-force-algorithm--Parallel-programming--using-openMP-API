@@ -9,7 +9,7 @@ we parallelized the code using two methods:
  * Second method using recursive algorithm
  <h2 align="center"> First method using nested loops::</h2>
  
-    1- Sequential code:
+   1- Sequential code:
     
     This is NOT a real password cracker. You cannot put in an encrypted password and find out what it is.
 This program simply cycles through an array in an attempt to "brute force" or "guess" 
