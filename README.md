@@ -11,8 +11,7 @@ we parallelized the code using two methods:
  
     1- Sequential code:
     
-    This is NOT a real password cracker. You cannot put in an encrypted password and 
-find out what it is.
+    This is NOT a real password cracker. You cannot put in an encrypted password and find out what it is.
 This program simply cycles through an array in an attempt to "brute force" or "guess" 
 the password you entered.
 Here is a simple flowchart that explains our sequential code, that contains six 
