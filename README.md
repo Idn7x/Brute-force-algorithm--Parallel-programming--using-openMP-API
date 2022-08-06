@@ -61,10 +61,46 @@ example the ‘crack5’ function, the section will assume to crack the password
 length of 5 that means try all the possible combinations existed in the length of five
 characters. 69^5 = 1564031349 combinations
 
+ <h2 align="center"> - Second method using recursive algorithm:</h2>
 
+  1-Sequential code:
 
+So, our second code includes a recursive function and it has as parameters:
 
+ * an array of characters.
+ * a string which is a combination of characters from the array.
+ * n : length of the array.
+ * k : length of the string. 
+ 
+the function will add or remove characters until k is reached. the base case is when k 
+has been reached, if not then iterate through the array, after that create new string 
+with next character and call crack again until string has reached its length.
 
+  2-Parallel code :
+  
+To parallelize the code, we had three possible methods:
+
+ * Parallelize only inside of the functions.
+ * Parallelize only inside of the main.
+ * Parallelize inside of the main and functions.
+
+We parallelized the code using the three methods but After a multiple tries and tests 
+of execution we confirm that the best method to parallelize our code is the second 
+one ( Parallelize only inside of the main ).
+
+How we parallelize the code:
+
+We parallelize the code using the parallel for. We started from the same principle.
+We try to give each thread to cover the cracking of the password with specified 
+length as before in the first parallel program but this time not with functions but with 
+iterations, in each iteration of the for loop will try all the possible combinations for a 
+specified length of the password depends on the value of the integer I that will starts 
+from 2 to 6 ( password with 2 characters to 6 characters.
+
+<h2 align="center">Code Source</h2>
+
+    if you need the code source of both sequentiel or parallel program of the two methods. Be free to contact me:
+    naciri.works@gmail.com
 
 
 
