@@ -1,4 +1,4 @@
-# Brute-force-algorithm--Parallel-programming--using-openMP-API
+# Brute-force-algorithm--Parallel-programming--using-OpenMP-API
 <h2 align="center">The introducion:</h2>
 Our algorithm is a program where you input a password (from length 2 to 6) and this will 
 continue to run until it finds the password you inputted or fails due to the password 
