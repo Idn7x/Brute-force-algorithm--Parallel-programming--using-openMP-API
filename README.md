@@ -7,6 +7,9 @@ password is longer than 6 characters. we use the openMP for parallelizing the co
 we parallelized the code using two methods:
  * First method using nested loops
  * Second method using recursive algorithm
+
+    This is NOT a real password cracker. You cannot put in an encrypted password and find out what it is.
+
  <h2 align="center"> - First method using nested loops::</h2>
  
    1- Sequential code:
