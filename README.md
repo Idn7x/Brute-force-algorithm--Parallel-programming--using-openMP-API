@@ -8,7 +8,9 @@ we parallelized the code using two methods:
  * First method using nested loops
  * Second method using recursive algorithm
  <h2 align="center"> First method using nested loops::</h2>
+ 
     1- Sequential code:
+    
     This is NOT a real password cracker. You cannot put in an encrypted password and 
 find out what it is.
 This program simply cycles through an array in an attempt to "brute force" or "guess" 
@@ -18,20 +20,10 @@ functions the first one is “ CheckPassword “that will compare the generated 
 the other five functions ( crack2, crack3 … ) with the password entered.
 
 How the crack algorithms work:
+
 We have a function for each possible length of the password. We have an array 
 CharGeneratorKey that holds all the possible characters the password can contain.
-Functions
-CheckPassword Crack2 Crack3 Crack4 Crack5 crack6
-2 Loops
-CheckPassword
-3 Loops
-CheckPassword
-4 Loops
-CheckPassword
-5 Loops
-CheckPassword
-6 Loops
-CheckPassword
+
 We start at the beginning of the array (signified by Char1Start) and go until the last 
 character of the array. After each for loop execution, our current letter gets assigned 
 to the next in the array.
@@ -48,3 +40,32 @@ So if we take our length 3 example, we have 2 characters in our alphabet, so the
 number of combinations is 2^3 = 8. 
 This program handles 69 characters with a max length of 6, so approximately
 1*10^11 combinations are possible
+
+ 2- Parallel code :
+ 
+To parallelize the code we had three possible methods:
+
+ * Parallelize only inside of the functions.
+ * Parallelize only inside of the main.
+ * Parallelize inside of the main and functions.
+We parallelized the code using the three methods but After a multiple tries and tests
+of execution we confirm that the best method to parallelize our code is the second 
+one ( Parallelize only inside of the main ).
+
+How we parallelize the code:
+
+As we had mentioned above we Parallelize the code only inside of the main.
+We parallelize the code with 6 sections, each one of theme assume the cracking of
+the password with specified length ( try all the possible combinations for a specified 
+length of the password) depends on the function called in the section, if we call for 
+example the ‘crack5’ function, the section will assume to crack the password with the 
+length of 5 that means try all the possible combinations existed in the length of five
+characters. 69^5 = 1564031349 combinations
+
+
+
+
+
+
+
+
