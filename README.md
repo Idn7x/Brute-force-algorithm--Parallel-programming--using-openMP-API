@@ -7,7 +7,7 @@ password is longer than 6 characters. we use the openMP for parallelizing the co
 we parallelized the code using two methods:
  * First method using nested loops
  * Second method using recursive algorithm
- <h2 align="center"> First method using nested loops::</h2>
+ <h2 align="center"> - First method using nested loops::</h2>
  
    1- Sequential code:
     
@@ -99,7 +99,7 @@ from 2 to 6 ( password with 2 characters to 6 characters.
 
 <h2 align="center">Code Source</h2>
 
-    if you need the code source of both sequentiel or parallel program of the two methods. Be free to contact me:
+    if you need the code source of both sequential or parallel program of the two methods. Be free to contact me:
     naciri.works@gmail.com
 
 
